@@ -3,9 +3,9 @@ from pydantic import BaseModel
 import pandas as pd
 import os
 
-from models.semantic import SemanticModel
-from models.regression import RegressionModel
-from pipeline.train import run as train_models
+from src.models.semantic import SemanticModel
+from src.models.regression import RegressionModel
+from src.pipeline.train import run as train_models
 
 
 if not os.path.exists("models/semantic_embeddings.npy") or not os.path.exists("models/regression.pkl"):
