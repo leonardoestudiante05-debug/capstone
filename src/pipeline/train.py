@@ -1,7 +1,7 @@
 import os
-from preprocess import load_data
-from models.semantic import SemanticModel
-from models.regression import RegressionModel
+from src.preprocess import load_data
+from src.models.semantic import SemanticModel
+from src.models.regression import RegressionModel
 
 def run():
     print("Cargando datos...")

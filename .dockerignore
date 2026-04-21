@@ -3,6 +3,5 @@ __pycache__
 *.pyc
 .git
 public/
-models/
 clusters.png
 README.md
