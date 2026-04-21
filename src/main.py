@@ -23,6 +23,13 @@ regression_model.load()
 
 app = FastAPI(title="Capstone ML API")
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class SearchRequest(BaseModel):
     query: str
 
